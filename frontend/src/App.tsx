@@ -1,13 +1,13 @@
-import React from 'react';
-import BgRemover from './components/BgRemover';
+import UploadCard from "./components/UploadCard";
+import Footer from "./components/Footer.tsx";
 
 const App = () => {
   return (
-    <div className="text-center">
-      <h1 className="text-4xl font-bold mb-6 text-white drop-shadow-lg">
-        🧙 Drop The BG
-      </h1>
-      <BgRemover />
+    <div className="min-h-screen flex flex-col justify-between bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white">
+      <main className="flex-grow flex justify-center items-center px-4 py-10">
+        <UploadCard />
+      </main>
+      <Footer />
     </div>
   );
 };
